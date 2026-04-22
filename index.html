@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/style.css">
+    <script defer src="src/app.js"></script>
+    <title>Diagnóstico de Hábitos de Consumo</title>
+</head>
+<body>
+    <main>
+        <section>
+            <h1>
+                Sustentabilidade na ArcelorMittal
+                <img 
+                src="img/logo.png" 
+                width="70"
+                alt="logo ArcelorMittal"
+                >
+            </h1>
+            <h2>Diagnóstico de Hábitos de Consumo</h2>
+            <p>
+                Mais do que conhecer as práticas da empresa, é importante 
+                refletir sobre os nossos próprios hábitos no dia a dia. O 
+                Diagnóstico de Hábitos de Consumo é uma ferramenta de 
+                autorreflexão que ajuda cada colaborador a identificar pontos 
+                fortes e oportunidades de melhoria no uso consciente de 
+                recursos naturais — dentro e fora do ambiente de trabalho.
+            </p>
+
+            <div class="icones-grid">
+                <div class="icone-card">
+                    <h2>💡 Consumo de Energia</h2>
+                    <p>
+                        Você desliga as luzes ao sair de um ambiente? Pequenos 
+                        gestos no controle da iluminação e de equipamentos 
+                        representam uma grande diferença no consumo coletivo de energia.
+                    </p>
+                </div>
+                <div class="icone-card">
+                    <h2>💧 Uso da Água</h2>
+                    <p>
+                        Você fecha a torneira ao ensaboar as mãos? O desperdício de água no 
+                        cotidiano é um dos maiores vilões do consumo consciente, e mudanças 
+                        simples têm impacto real.
+                    </p>
+                </div>
+                <div class="icone-card">
+                    <h2>♻️ Descarte Responsável</h2>
+                    <p>
+                        Você descarta pilhas e eletrônicos no lugar certo? Resíduos eletrônicos 
+                        exigem descarte especializado para evitar contaminação do solo e da água.
+                    </p>
+                </div>
+                <div class="icone-card">
+                    <h2>🚲 Mobilidade Sustentável</h2>
+                    <p>
+                        Você prefere transporte coletivo ou bicicleta? A escolha do meio de transporte 
+                        impacta diretamente as emissões de carbono e a qualidade do ar nas cidades.
+                    </p>
+                </div>
+            </div>
+            <button id="btn-comecar">Começar</button>
+        </section>
+
+        <section class="escondido">
+            <div class="perguntas-container">
+                <h2>As 5 Perguntas do Diagnóstico</h2>
+                <div class="pergunta">
+                    <span class="numero">1</span>
+                    <p>Desligo as luzes ao sair de um ambiente?</p>
+                    <button class="btn-sim">Sim</button>
+                    <button class="btn-nao">Não</button>
+                </div>
+                <div class="pergunta">
+                    <span class="numero">2</span>
+                    <p>Fecho a torneira ao ensaboar as mãos?</p>
+                    <button class="btn-sim">Sim</button>
+                    <button class="btn-nao">Não</button>
+                </div>
+                <div class="pergunta">
+                    <span class="numero">3</span>
+                    <p>Descarto pilhas e eletrônicos no lugar certo?</p>
+                    <button class="btn-sim">Sim</button>
+                    <button class="btn-nao">Não</button>
+                </div>
+                <div class="pergunta">
+                    <span class="numero">4</span>
+                    <p>Evito imprimir documentos desnecessários?</p>
+                    <button class="btn-sim">Sim</button>
+                    <button class="btn-nao">Não</button>
+                </div>
+                <div class="pergunta">
+                    <span class="numero">5</span>
+                    <p>Prefiro transporte coletivo ou bicicleta?</p>
+                    <button class="btn-sim">Sim</button>
+                    <button class="btn-nao">Não</button>
+                </div>
+            </div>
+            <button id="btn-resultado">Resultado</button>
+        </section>
+
+        <section class="section-resultado escondido">
+            <h2>O Que Seu Resultado Significa</h2>
+            <p id="mensagem-resultado"></p>
+            <p id="ultimo-resultado"></p>
+        </section>
+    </main>
+</body>
+</html>

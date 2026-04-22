@@ -1,0 +1,104 @@
+:root {
+    --cor-fundo: rgba(100, 50, 150, 0.08);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+h1, h2 {
+    background: linear-gradient(to right, #3d1a8a, #8b1a6b, #c0213f, #e8622a);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 16px;
+}
+
+p {
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+
+.icones-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-top: 32px;
+}
+
+.icone-card {
+    background-color: var(--cor-fundo);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.pergunta {
+    background-color: var(--cor-fundo);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.numero {
+    background-color: #bba9c3;
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+button {
+    padding: 12px 32px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#btn-comecar, #btn-resultado { 
+  background-color: #e8622a; 
+  border-radius: 20px;
+  color: white; 
+}
+
+.btn-sim { 
+    background-color: #5b2d8e; 
+    color: #fff; 
+}
+
+.btn-nao { 
+    background-color: #c2185b; 
+    color: #fff; 
+}
+
+button:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.escondido {
+    display: none;
+}
