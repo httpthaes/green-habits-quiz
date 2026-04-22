@@ -49,29 +49,37 @@ const mensagemResultado = document.querySelector('#mensagem-resultado');
 
 btnResultado.addEventListener('click', () => {
     if (pontos == 5) {
-        mensagemResultado.textContent = `
-        ⭐ 5 de 5 — Excelente! 
-        Você é um exemplo de consumo consciente! 
-        Seus hábitos no dia a dia já refletem uma preocupação 
-        genuína com o uso de recursos. Continue assim e 
-        inspire colegas ao seu redor a também adotarem 
-        práticas sustentáveis.
+        mensagemResultado.innerHTML = `
+        <span>⭐ 5 de 5 — Excelente! </span>
+        <p>
+            Você é um exemplo de consumo consciente! 
+            Seus hábitos no dia a dia já refletem uma preocupação 
+            genuína com o uso de recursos. Continue assim e 
+            inspire colegas ao seu redor a também adotarem 
+            práticas sustentáveis.
+        </p>
         `
     } else if (pontos >= 3){
-        mensagemResultado.textContent = `
-        ✅ 3 a 4 de 5 — Bom! Você tem bons hábitos, mas ainda há 
-        espaço para melhorar. Identifique as perguntas em que 
-        respondeu "Não" e foque nelas. Pequenas mudanças — 
-        como fechar a torneira ou desligar a luz — somam 
-        grandes resultados ao longo do tempo.
+        mensagemResultado.innerHTML = `
+        <span>✅ 3 a 4 de 5 — Bom!</span>
+        <p>
+            Você tem bons hábitos, mas ainda há 
+            espaço para melhorar. Identifique as perguntas em que 
+            respondeu "Não" e foque nelas. Pequenas mudanças — 
+            como fechar a torneira ou desligar a luz — somam 
+            grandes resultados ao longo do tempo.
+        </p>
         `
     } else {
-        mensagemResultado.textContent = `
-        ⚠️ Menos de 3 — Atenção! Pequenas mudanças fazem grande 
-        diferença. Você não precisa mudar tudo de uma vez — 
-        comece por um hábito por semana. O diagnóstico é o 
-        primeiro passo para uma jornada de transformação 
-        pessoal e coletiva rumo à sustentabilidade.
+        mensagemResultado.innerHTML = `
+        <span>⚠️ Menos de 3 — Atenção!</span>
+        <p>
+            Pequenas mudanças fazem grande 
+            diferença. Você não precisa mudar tudo de uma vez — 
+            comece por um hábito por semana. O diagnóstico é o 
+            primeiro passo para uma jornada de transformação 
+            pessoal e coletiva rumo à sustentabilidade.
+        </p>
         `
     }
 
