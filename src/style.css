@@ -102,3 +102,18 @@ button:disabled {
 .escondido {
     display: none;
 }
+
+#mensagem-resultado {
+    background-color: var(--cor-fundo);
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid rgba(100, 50, 150, 0.2);
+    max-width: 700px;
+}
+
+#mensagem-resultado span {
+    display: block;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
