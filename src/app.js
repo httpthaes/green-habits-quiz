@@ -44,7 +44,7 @@ perguntas.forEach(pergunta => {
 
 //resultado
 
-const resultado = document.querySelector('.section-resultado')
+const resultado = document.querySelector('.section-resultado');
 const mensagemResultado = document.querySelector('#mensagem-resultado');
 
 btnResultado.addEventListener('click', () => {
@@ -103,4 +103,8 @@ document.addEventListener('DOMContentLoaded', () => {
         hábitos mais conscientes e sustentáveis.
         `
     }
+})
+
+document.querySelector('#btn-refazer').addEventListener('click', () => {
+    window.location.reload()
 })
