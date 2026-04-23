@@ -83,6 +83,24 @@ btnResultado.addEventListener('click', () => {
         `
     }
 
+    localStorage.setItem('ultimaPontuacao', pontos)
     quiz.classList.add('escondido')
     resultado.classList.remove('escondido')
+})
+
+document.addEventListener('DOMContentLoaded', () => {
+    const ultimaPontuacao = localStorage.getItem('ultimaPontuacao')
+    const ultimoResultado = document.querySelector('#ultimo-resultado')
+    
+    if (ultimaPontuacao) {
+        ultimoResultado.textContent = `
+        Na última vez você fez ${ultimaPontuacao} de 5 pontos.
+        `
+    } else {
+        ultimoResultado.textContent = `
+        💡 Dica: Refaça o diagnóstico periodicamente para acompanhar 
+        sua evolução. Cada nova tentativa é uma oportunidade de consolidar 
+        hábitos mais conscientes e sustentáveis.
+        `
+    }
 })
