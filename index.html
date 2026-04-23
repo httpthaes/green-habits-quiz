@@ -60,56 +60,77 @@
                     </p>
                 </div>
             </div>
+            <p id="ultimo-resultado"></p>
             <button id="btn-comecar">Começar</button>
         </section>
 
         <section class="section-perguntas escondido">
             <div class="perguntas-container">
-                <h2>As 5 Perguntas do Diagnóstico</h2>
+                <h2 class="titulo-secao">As 5 Perguntas do Diagnóstico</h2>
                 <div class="pergunta">
-                    <span class="numero">1</span>
-                    <p>Desligo as luzes ao sair de um ambiente?</p>
-                    <button class="btn-sim">Sim</button>
-                    <button class="btn-nao">Não</button>
+                    <p>
+                        <span class="numero">1</span>
+                        Desligo as luzes ao sair de um ambiente?
+                    </p>
+                    <div class="botoes">
+                        <button class="btn-sim">Sim</button>
+                        <button class="btn-nao">Não</button>
+                    </div>
+                    
                 </div>
                 <div class="pergunta">
-                    <span class="numero">2</span>
-                    <p>Fecho a torneira ao ensaboar as mãos?</p>
-                    <button class="btn-sim">Sim</button>
-                    <button class="btn-nao">Não</button>
+                    <p>
+                        <span class="numero">2</span>
+                        Fecho a torneira ao ensaboar as mãos?
+                    </p>
+                    <div class="botoes">
+                        <button class="btn-sim">Sim</button>
+                        <button class="btn-nao">Não</button>
+                    </div>
                 </div>
                 <div class="pergunta">
-                    <span class="numero">3</span>
-                    <p>Descarto pilhas e eletrônicos no lugar certo?</p>
-                    <button class="btn-sim">Sim</button>
-                    <button class="btn-nao">Não</button>
+                    <p>
+                        <span class="numero">3</span>
+                        Descarto pilhas e eletrônicos no lugar certo?
+                    </p>
+                    <div class="botoes">
+                        <button class="btn-sim">Sim</button>
+                        <button class="btn-nao">Não</button>
+                    </div>
                 </div>
                 <div class="pergunta">
-                    <span class="numero">4</span>
-                    <p>Evito imprimir documentos desnecessários?</p>
-                    <button class="btn-sim">Sim</button>
-                    <button class="btn-nao">Não</button>
+                    <p>
+                        <span class="numero">4</span>
+                        Evito imprimir documentos desnecessários?
+                    </p>
+                    <div class="botoes">
+                        <button class="btn-sim">Sim</button>
+                        <button class="btn-nao">Não</button>
+                    </div>
                 </div>
                 <div class="pergunta">
-                    <span class="numero">5</span>
-                    <p>Prefiro transporte coletivo ou bicicleta?</p>
-                    <button class="btn-sim">Sim</button>
-                    <button class="btn-nao">Não</button>
+                    <p>
+                        <span class="numero">5</span>
+                        Prefiro transporte coletivo ou bicicleta?
+                    </p>
+                    <div class="botoes">
+                        <button class="btn-sim">Sim</button>
+                        <button class="btn-nao">Não</button>
+                    </div>
                 </div>
             </div>
             <button id="btn-resultado" disabled="true">Resultado</button>
         </section>
 
         <section class="section-resultado escondido">
-            <h2>O Que Seu Resultado Significa</h2>
-            <div id="mensagem-resultado">
+            <h2 class="titulo-secao">O Que Seu Resultado Significa</h2>
+            <p>
                 O diagnóstico não é uma prova — é um espelho. Cada 
                 resposta revela um hábito que pode ser mantido, 
-                reforçado ou transformado. Veja o que cada faixa de 
-                pontuação representa e como avançar para o próximo 
-                nível de consciência ambiental.
-            </div>
-            <p id="ultimo-resultado"></p>
+                reforçado ou transformado. 
+            </p>
+            <div id="mensagem-resultado"></div>
+            <button id="btn-refazer">Refazer teste</button>
         </section>
     </main>
 </body>
